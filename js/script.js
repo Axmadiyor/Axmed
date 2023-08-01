@@ -1,20 +1,20 @@
 // "use strict";
 
-const numberOfSeries = prompt("Nechta serial ko'rdingiz?","");
-let a = prompt("Oxirgi ko'rgan serialingiz?","");
-let b = +prompt("Nechi baho berasiz?","")
-let c = prompt("Oxirgi ko'rgan serialingiz?","");
-let d = +prompt("Nechi baho berasiz?","")
+const numberOfSeries = +prompt("Nechta serial ko'rdingiz?", "")
 const seriesDb = {
     count: numberOfSeries,
-    series: {
-        
-    },
+    series: {},
     actors: {},
     genres: [],
-    private: false,
+    private: false
 }
 
-seriesDb.series[a] = b;
-seriesDb.series[c] = d;
+const savol1 = prompt("Oxirgi ko'rgan serialingiz?",""),
+savol2 = +prompt("Nechi baho berasiz?",""),
+savol3 = prompt("Oxirgi ko'rgan serialingiz?",""),
+savol4 = +prompt("Nechi baho berasiz?","")
+
+seriesDb.series[savol1] = savol2;
+seriesDb.series[savol3] = savol4;
+
 console.log(seriesDb)
